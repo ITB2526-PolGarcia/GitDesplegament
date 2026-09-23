@@ -168,17 +168,3 @@ if ($id > 0) {
 header("Location: index.php");
 exit;
 ?>
-
-
-*** Correcció dels errors principals ***
-
-- localhost en lloc de locahost
-- eliminat el "0" que hi havia després del nom d'usuari
-- tancat correctament el bloc if ($conn->connect_error)
-- canviat method="posts" per method="post"
-- corregit VALUES (*, ?) per VALUES (?, ?)
-- corregit UPDATE users where ... per UPDATE users SET ...
-- corregit DELETE * FROM ... per DELETE FROM ...
-- eliminat "Where false" del SQL, ja que és incorrecte
-- eliminades les taules duplicades i fragments repetits
-- corregit l'estructura general del projecte perquè sigui funcional
